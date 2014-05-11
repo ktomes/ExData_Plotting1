@@ -22,6 +22,5 @@ houseHold_data <-read.table("household_power_consumption.txt", header = T, sep =
 png(filename = "plot1.png", width = 480, height = 480, bg = "white")
 hist(houseHold_data$Global_active_power,      # make a histogram
      xlab="Global Active Power (kilowatts)",  # X axis title
-     main="Global Active Power", col = "red") # Plot Title, color red
      main="Global Active Power", col = "red") # Main title, color red
 dev.off()
